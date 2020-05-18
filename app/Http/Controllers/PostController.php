@@ -18,4 +18,6 @@ class PostController extends Controller
         ];
         return view('welcome', $data);
     }
+	
+	
 }

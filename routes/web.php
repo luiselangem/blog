@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'PostController@index')->name('landing_page');
+Route::post('/', 'HomeController@getLogout')->name('logout');
+
 
 Auth::routes();
 
@@ -23,3 +25,8 @@ Route::post('/store/post', 'HomeController@storePost')->name('store_new_post');
 Route::get('/edit/post/{post_id}', 'HomeController@editPost')->name('edit_post_form');
 Route::post('/update/post/{post_id}', 'HomeController@updatePost')->name('update_post');
 Route::post('/delete/post/{post_id}', 'HomeController@deletePost')->name('delete_post');
+
+
+Route::get('/create/post/migrate', 'ApiController@migrate')->name('migrate');
+
+

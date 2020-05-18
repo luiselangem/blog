@@ -1,7 +1,9 @@
 
 <nav class="col-md-2 d-none d-md-block bg-light sidebar">
     <div class="sidebar-sticky">
-        <ul class="nav flex-column">
+      
+<br/><br/>
+	  <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active" href="#">
                     <span data-feather="home"></span>
@@ -12,6 +14,12 @@
                 <a class="nav-link" href="{{ route('all_posts') }}">
                     <span data-feather="file"></span>
                     Posts
+                </a>
+            </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="{{ route('migrate') }}">
+                    <span data-feather="file"></span>
+                    Migrate Posts
                 </a>
             </li>
         </ul>
@@ -29,7 +37,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('logout') }}">
                     <span data-feather="file-text"></span>
                     Logout
                 </a>

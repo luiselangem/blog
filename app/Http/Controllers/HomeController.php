@@ -6,6 +6,7 @@ use App\Blog;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class HomeController extends Controller
 {
@@ -128,5 +129,11 @@ class HomeController extends Controller
         $post->delete();
         return redirect()->route('all_posts')->with('status', 'Post has been successfully delete!');
     }
+	
+	public function getLogout(){
+         Auth::logout();
+       Session::flush();
+       return redirect('/');
+       }
 
 }

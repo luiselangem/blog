@@ -1,0 +1,21 @@
+﻿
+
+1. Descargar del Github todo el proyecto.
+2. Copiar el contenido en el directorio del servidor donde se desee definir el proyecto.
+3. Ubicar archivo .env y editar los parametros en la conexin mysql ajustandolos a la configuracion de su servidor de base de datos.
+	DB_HOST=127.0.0.1
+	DB_PORT=3306
+	DB_DATABASE=blog
+	DB_USERNAME=root
+	DB_PASSWORD=
+4. a. Crear Base de datos blog.
+   b. Cargar el script "DataBase-blog.sql" en la base de datos.  
+            mysql -u username –-password=your_password blogs < DataBase-blog.sql 
+
+5.  Los datos del usuario administrador:
+		Administrator User
+		user:   admin@miblog.com
+		password:  123456789
+6.  Para migrar los posts de el API-REST, Acceder al Perfil de administrador y Seleccionar la opcion "Migrate Posts".
+7.  Crear un usuario nuevo, seleccionar la opcion Registry.
+8.  Crear un nuevo Post, en la opcion del Menu "Posts" y presionar el boton  "Add Post".
